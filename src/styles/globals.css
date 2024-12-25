@@ -2,20 +2,43 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@font-face {
+  font-family: font1;
+  src: url(/font/3XFuErsiyJsY9O_Gepph-HHhZfn23vRK.woff2);
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@font-face {
+  font-family: font2;
+  src: url(/font/madefor-text.var.original.woff2);
 }
-
+@font-face {
+  font-family: font3;
+  src: url(/font/WixMadeforTextVF_W_Wght.8022447a.woff2);
+}
+::-webkit-scrollbar{
+  background-color: black;
+  width: 5px;
+}
+::-webkit-scrollbar-thumb{
+  background-color: white;
+  border-radius: 50px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+  width: 100%;
+}
+
+.shadowover{
+  background: linear-gradient(to bottom ,transparent , rgba(0, 0, 0, 0.174) ,rgba(0, 0, 0, 0.514) ,rgb(0, 0, 0) );
+  z-index: 9;
+}
+
+.footerover{
+  background: linear-gradient(to top ,transparent , rgba(0, 0, 0, 0.174) ,rgba(0, 0, 0, 0.514) ,rgb(0, 0, 0) );
+  z-index: 9;
 }
