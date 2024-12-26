@@ -1,6 +1,11 @@
-import React from 'react'
+import gsap, { wrap } from 'gsap';
+import ScrollTrigger from 'gsap/dist/ScrollTrigger';
+import React, { useEffect, useRef } from 'react'
+gsap.registerPlugin(ScrollTrigger)
 
 const Section2 = () => {
+  const container = useRef()
+  const wrappers = useRef([])
 
     const data = [
         {
@@ -100,30 +105,95 @@ const Section2 = () => {
           poster: "https://static.wixstatic.com/media/c837a6_118d933f700b4fa8809ad163dc04e946~mv2.jpg/v1/fill/w_633,h_843,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/AdobeStock_589565152_Preview.jpg"
         },
       ];
+
+      useEffect(()=>{
+        if(container.current && wrappers.current.length > 0){
+          // console.log(wrappers);
+          
+          wrappers.current.forEach(wrap => {
+            var tl = gsap.timeline({
+              scrollTrigger: {
+                trigger: wrap,
+                scroller: "body",
+                // markers: true,
+                start: "top 70%",
+                end: "top 15%",
+                scrub: 2, 
+              }
+            });
+            
+            tl
+              .from(wrap.querySelector(".line1t"), {
+                width: "0%",
+                duration: 1, 
+                ease: "power2.out", 
+              }, "a")
+              .from(wrap.querySelector(".line1l"), {
+                height: "0%",
+                duration: .8,
+                delay: 0.1,
+                ease: "power2.out",
+              }, "a")
+              .from(wrap.querySelector(".line1r"), {
+                height: "0%",
+                duration: 1,
+                delay: 0.2,
+                ease: "power2.out",
+              }, "a")
+              .from(wrap.querySelector(".card-center"), {
+                scale: 0.5,
+                y: "80%",
+                duration: 1.2, 
+                ease: "linear",
+              }, "b")
+              .from(wrap.querySelectorAll(".card-content"), {
+                y: "80%",
+                duration: 1.2,
+                ease: "linear",
+              }, "b")
+              .from(wrap.querySelector(".line1b"), {
+                width: "0%",
+                delay: .8,
+                duration:.8,
+                ease: "power2.out",
+              },"b")
+            
+          })
+        }
+      
+      },[])
+      
       
 
     return (
-        <div className='w-full min-h-screen bg-black py-[5vw]'>
-           {data.map((d,i)=>( <div key={i} className='wrap w-full h-[90vh] flex items-start justify-between relative'>
-                <div className="line1t bg-white/80 w-full h-[1px] absolute top-0 left-0"></div>
+        <div ref={container} className='w-full min-h-screen bg-black py-[5vw]'>
+           {data.map((d,i)=>( <div ref={(el) => wrappers.current[i] = el} key={i} className='wrap w-full sm:h-[50vh] h-[90vh] flex items-start justify-between relative'>
+                <div className="line1t bg-white/80 w-full h-[1px] absolute top-0 left-1/2 -translate-x-1/2"></div>
                 {data.length - 1 === i && <div className="line1b bg-white/80 w-full h-[1px] absolute bottom-0 left-0"></div>}
-                <div className="card p-[3vw] pt-[4vw] w-[calc(100%/3)] h-full relative text-white">
-                   <div className="card-content">
-                   <h5 className='text-[1.2vw] text-zinc-400 font-[font3]'>[ 01 ]</h5>
+                <div className="card sm:hidden p-[3vw] pt-[4vw] w-[calc(100%/3)] h-full relative text-white">
+                   <div className="card-content h-full">
+                   <h5 className='text-[1.2vw] text-zinc-400 font-[font3]'>[ {i+1 < 10 ? `0${i+1}`: i+1} ]</h5>
                     <h3 className='text-[3vw] leading-tight my-[2vw] font-[font2]'>{d.name}</h3>
-                    <div className='px-[1.6vw] py-[.3vw] border border-zinc-400 font-[font3] w-fit rounded-full'>
-                        <h3 className='text-[.9vw] text-zinc-400'>Read full article</h3>
+                    <div className='readbtn overflow-hidden relative px-[1.6vw] py-[.3vw] border border-zinc-400 font-[font3] w-fit rounded-full cursor-pointer'>
+                        <h3 className='text-[.9vw] z-20 text-zinc-400 relative'>Read full article</h3>
                     </div>
                    </div>
                     <div className="line1l h-[90vh] w-[1px] bg-white/80 absolute right-0 top-0"></div>
                 </div>
-                <div className="card w-[calc(100%/3)] h-full relative">
+                <div style={{transformOrigin:"top center"}} className="card  card-center relative sm:w-[50%] w-[calc(100%/3)] h-full">
                     <img className='w-full h-full object-cover' src={d.poster} alt="" />
+                    <div className="card-mobile sm:flex hidden h-full absolute w-full  flex-col justify-end bottom-0 left-0 p-[3vw] pb-[6vw]">
+                   <h5 className='text-[3.5vw] text-zinc-400 font-[font3]'>[ {i+1 < 10 ? `0${i+1}`: i+1} ]</h5>
+                    <h3 className='text-[4.5vw] leading-tight my-[2.5vw] text-white font-[font2]'>{d.name}</h3>
+                    <div className='readbtn overflow-hidden relative px-[5vw] py-[.6vw] border border-zinc-400 font-[font3] w-fit rounded-full cursor-pointer'>
+                        <h3 className='text-[3.5vw] z-20 text-zinc-400 relative font-semibold'>Read full article</h3>
+                    </div>
+                   </div>
                 </div>
-                <div className="card w-[calc(100%/3)] h-full p-[3vw] pt-[4vw] relative text-white">
-                    <div className="line1r h-[90vh] w-[1px] bg-white/80 absolute left-0 top-0"></div>
-                   <div className='card-content'>
-                    {d.details.map((dets,i)=>( <h4 key={i} className='text-[1.4vw] mb-[1.5vw] font-[font3] font-regular'>{i+1}.{dets}</h4>))}
+                <div className="card sm:w-[50%] w-[calc(100%/3)] h-full p-[3vw] pt-[4vw] relative text-white">
+                    <div className="line1r sm:h-[50vh] h-[90vh] w-[1px] bg-white/80 absolute left-0 top-0"></div>
+                   <div className='card-content h-full'>
+                    {d.details.map((dets,i)=>( <h4 key={i} className='sm:text-[3.3vw] text-[1.4vw] mb-[1.5vw] font-[font3] font-regular'>{i+1}.{dets}</h4>))}
                    </div>
                 </div>
             </div>))}

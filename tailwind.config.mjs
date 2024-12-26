@@ -7,9 +7,12 @@ export default {
   ],
   theme: {
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+      screens: {
+        sm: { max: "639px" }, // Target devices smaller than 640px
+        md: { max: "767px" }, // Target devices smaller than 768px
+        lg: { max: "1023px" }, // Target devices smaller than 1024px
+        xl: { max: "1279px" }, // Target devices smaller than 1280px
+        xxl: { max: "1535px" }, // Target devices smaller than 1536px
       },
     },
   },

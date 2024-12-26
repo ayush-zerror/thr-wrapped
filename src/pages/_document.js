@@ -5,7 +5,6 @@ export default function Document() {
     <Html lang="en">
       <Head>
         <link rel="shortcut icon" href="/favicon.png" type="image/x-icon" />
-        <title>The Hollywood Reporter | Year in Review</title>
       </Head>
       <body className="antialiased">
         <Main />
