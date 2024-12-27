@@ -57,7 +57,7 @@ return (
   <div className='w-full relativ'>
     <div className='bg w-full bg-black h-screen fixed top-0 left-0'>
       <div ref={videoCover} className='h-screen w-full bg-[#000000c1] opacity-0 absolute top-0 left-0'></div>
-      <video autoPlay playsInline muted loop className='w-full h-full object-cover' src="https://video.wixstatic.com/video/84770f_5d5600c9d7d545b5aac32125ff6c68a0/1080p/mp4/file.mp4"></video>
+      <video autoPlay playsInline muted loop className='w-full h-full object-cover' src="/video.mp4"></video>
     </div>
     <div className='loader w-full h-screen fixed top-0 left-0 bg-white z-[999] flex items-center justify-center flex-col'>
       <img src="/thr-logo.png" className='loader-logo w-[15%] absolute top-1/2 -translate-x-1/2 left-1/2 -translate-y-1/2' alt="" />
