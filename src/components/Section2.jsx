@@ -200,7 +200,7 @@ const Section2 = ({ videoCover, footer }) => {
         <div className="card sm:hidden p-[3vw] py-[3vw] w-[calc(100%/3)] h-full relative text-white">
           <div className="card-content h-full ">
             <h5 className='text-[1.2vw] text-zinc-400 font-[font3]'>[ {i + 1 < 10 ? `0${i + 1}` : i + 1} ]</h5>
-            <h3 className='text-[3vw] leading-tight my-[2vw] font-[font2]'>{d.name}</h3>
+            <h3 className='text-[3.5vw] leading-tight my-[2vw] font-[font2]'>{d.name}</h3>
             <div className='readbtn overflow-hidden relative px-[1.6vw] py-[.3vw] border border-zinc-400 font-[font3] w-fit rounded-full cursor-pointer'>
               <h3 className='text-[.9vw] z-20 text-zinc-400 relative'>Read full article</h3>
             </div>

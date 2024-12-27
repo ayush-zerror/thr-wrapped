@@ -3,7 +3,7 @@ const Footer = ({footer}) => {
     return (
         <div ref={footer} className='footer w-full h-screen relative'>
             <div className='overlay w-full h-full  absolute top-0 left-0 flex flex-col items-center mix-blend-difference text-white justify-between text-center p-[1.5vw] sm:pt-[10vh] sm:py-[8vw]'>
-                <h1 className='sm:text-[25vw] text-[17vw] sm:whitespace-normal whitespace-nowrap font-["font2"] leading-none w-fit font-medium sm:tracking-[-4px] tracking-[-15px]'>Onward 2025</h1>
+                <h1 className='sm:text-[25vw] text-[18.5vw] sm:whitespace-normal whitespace-nowrap font-["font2"] uppercase leading-[.7] w-fit font-medium'>Onward 2025</h1>
                 <div className='text-center'>
                     <h5 className='text-[.98vw] sm:hidden uppercase font-[font3] font-medium'>RPSG Lifestyle Media Thapar House, 3rd floor,<br /> Janpath Lane, New Delhi - 110001.</h5>
                     <h5 className='sm:text-[4vw] sm:font-normal sm:block hidden text-[.98vw] uppercase font-[font3] font-medium'>500 Terry Francine Street,</h5>
