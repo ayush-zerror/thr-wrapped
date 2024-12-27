@@ -3,16 +3,12 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: font1;
-  src: url(/font/3XFuErsiyJsY9O_Gepph-HHhZfn23vRK.woff2);
-}
-@font-face {
   font-family: font2;
-  src: url(/font/madefor-text.var.original.woff2);
+  src: url(/font/font2.woff2);
 }
 @font-face {
   font-family: font3;
-  src: url(/font/WixMadeforTextVF_W_Wght.8022447a.woff2);
+  src: url(/font/font1.woff2);
 }
 ::-webkit-scrollbar{
   background-color: black;
