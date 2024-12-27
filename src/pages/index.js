@@ -61,7 +61,7 @@ return (
     </div>
     <div className='loader w-full h-screen fixed top-0 left-0 bg-white z-[999] flex items-center justify-center flex-col'>
       <img src="/thr-logo.png" className='loader-logo w-[15%] absolute top-1/2 -translate-x-1/2 left-1/2 -translate-y-1/2' alt="" />
-      <h4 className='loader-text font-[font3] uppercase text-[#DE1F26] text-[1.5vw] font-semibold opacity-0'>The Wrapped 2024</h4>
+      <h4 className='loader-text font-[font2] uppercase text-[#DE1F26] text-[3vw] font-semibold opacity-0'>The Wrapped 2024</h4>
     </div>
     <div className='main  relative overflow-hidden'>
       <Section1 home={home} />
