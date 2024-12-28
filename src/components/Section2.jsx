@@ -210,10 +210,10 @@ const Section2 = ({ videoCover, footer }) => {
         <div style={{ transformOrigin: "top center" }} className="card  card-center relative sm:w-[50%] w-[calc(100%/3)] h-full">
           <img className='w-full h-full object-cover' src={d.poster} alt="" />
           <div className="card-mobile sm:flex hidden h-full absolute w-full  flex-col justify-end bottom-0 left-0 p-[3vw] pb-[6vw]">
-            <h5 className='text-[3.5vw] text-zinc-400 font-[font3]'>[ {i + 1 < 10 ? `0${i + 1}` : i + 1} ]</h5>
-            <h3 className='text-[4.5vw] leading-tight my-[2.5vw] text-white font-[font2]'>{d.name}</h3>
+            <h5 className='text-[4vw] text-zinc-200 font-[font3]'>[ {i + 1 < 10 ? `0${i + 1}` : i + 1} ]</h5>
+            <h3 className='text-[8vw] leading-tight my-[2.5vw] text-white font-[font2]'>{d.name}</h3>
             <div className='readbtn overflow-hidden relative px-[5vw] py-[.6vw] border border-zinc-400 font-[font3] w-fit rounded-full cursor-pointer'>
-              <h3 className='text-[3.5vw] z-20 text-zinc-400 relative font-semibold'>Read full article</h3>
+              <h3 className='text-[4vw] z-20 text-zinc-400 relative font-semibold'>Read full article</h3>
             </div>
           </div>
         </div>
