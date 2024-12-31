@@ -43,23 +43,6 @@ const Section2 = ({ videoCover, footer }) => {
       poster: "https://m.media-amazon.com/images/M/MV5BZWM2NDQyZTAtYTIzOS00NmIwLWFhNWUtMzkzZWI5YTk0NjFiXkEyXkFqcGc@._V1_FMjpg_UX877_.jpg"
     },
     {
-      name: "Heading South",
-      details: [
-        "Kani Kusruti (Girls Will Be Girls)",
-        "Vikrant Massey (Sector 36)",
-        "Alia Bhatt (Jigra)",
-        "Diljit Dosanjh (Amar Singh Chamkila)",
-        "Anjali Anand (Raat Jawaan Hai)",
-        "Gyanendra Tripathi (Barah by Barah)",
-        "Mukul Chadda (Fairy Folk)",
-        "Vivek Gomber (Lootere)",
-        "Konkona Sen Sharma (Killer Soup)",
-        "Abhishek Bachchan (I Want to Talk)"
-      ],
-      more:"https://www.hollywoodreporterindia.com/features/insight/heading-south-the-cinema-of-the-south-is-now-the-cinema-of-india",
-      poster: "https://www.hollywoodreporterindia.com/_next/image?url=https%3A%2F%2Fcdn.hollywoodreporterindia.com%2Farticle%2F-2024-12-17T10%253A26%253A51.344Z-Lead1.jpg&w=1920&q=75"
-    },
-    {
       name: "Hindi Cinema In 2024",
       details: [
         "When the Cats Are Away…",
@@ -347,9 +330,9 @@ const Section2 = ({ videoCover, footer }) => {
           </div>
           <div className="line1l h-[80vh] w-[1px] bg-white absolute right-0 top-0"></div>
         </div>
-        <div style={{ transformOrigin: "top center" }} className="card  card-center relative md:w-[50%] w-[calc(100%/3)] h-full">
+        <div style={{ transformOrigin: "top center" }} className="card  card-center relative sm:w-[50%] md:w-[50%] w-[calc(100%/3)] h-full">
           <img className='w-full h-full object-cover' src={d.poster} alt="" />
-          <div className="card-mobile md:flex hidden h-full absolute w-full  flex-col justify-end bottom-0 left-0 p-[3vw] pb-[6vw]">
+          <div className="card-mobile sm:flex md:flex hidden h-full absolute w-full  flex-col justify-end bottom-0 left-0 p-[3vw] pb-[6vw]">
             <h5 className='text-[4vw] md:text-[2.5vw] text-white font-[font3]'>[ {i + 1 < 10 ? `0${i + 1}` : i + 1} ]</h5>
             <h3 className='text-[8vw] md:text-[5vw] leading-tight my-[2.5vw] text-white font-[font2]'>{d.name}</h3>
             <a href={d.more} target='_block' className='readbtn overflow-hidden relative px-[3vw] py-[.6vw] border border-white font-[font3] inline-block w-fit rounded-full cursor-pointer'>
@@ -357,10 +340,10 @@ const Section2 = ({ videoCover, footer }) => {
             </a>
           </div>
         </div>
-        <div className="card md:w-[50%] w-[calc(100%/3)] h-full p-[3vw] py-[3vw] relative text-white">
+        <div className="card sm:w-[50%] md:w-[50%] w-[calc(100%/3)] h-full p-[3vw] py-[3vw] relative text-white">
           <div className="line1r sm:h-[50vh] h-[80vh] w-[1px] bg-white absolute left-0 top-0"></div>
           <div className='card-content h-full '>
-            {d.details.map((dets, i) => ( <h4 key={i} className='sm:text-[3.3vw] md:text-[2.8vw] text-[1.3vw] mb-[1.2vw] font-[font3] font-regular flex items-center sm:gap-[1vw] gap-[.5vw]'><span className='sm:w-[1vw] md:w-[.7vw] w-[.3vw] flex-shrink-0 sm:h-[1vw] md:h-[.7vw] h-[.3vw] block bg-white rounded-full'></span> {dets}</h4>))}
+            {d.details.map((dets, i) => ( <h4 key={i} className='sm:text-[3.3vw] md:text-[2.5vw] lg:text-[1.8vw] text-[1.3vw] mb-[1.2vw] font-[font3] font-regular flex items-center sm:gap-[1vw] gap-[.5vw]'><span className='sm:w-[1vw] md:w-[.7vw] w-[.3vw] flex-shrink-0 sm:h-[1vw] md:h-[.7vw] h-[.3vw] block bg-white rounded-full'></span> {dets}</h4>))}
           </div>
         </div>
       </div>))}

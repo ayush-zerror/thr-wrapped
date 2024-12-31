@@ -8,11 +8,11 @@ export default {
   theme: {
     extend: {
       screens: {
-        sm: { max: "500px" }, // Target devices smaller than 640px
-        md: { max: "767px" }, // Target devices smaller than 768px
-        lg: { max: "1023px" }, // Target devices smaller than 1024px
-        xl: { max: "1279px" }, // Target devices smaller than 1280px
-        xxl: { max: "1535px" }, // Target devices smaller than 1536px
+        sm: { max: "500px" }, // Target devices between 500px and 639px
+        md: { min: "501px", max: "767px" }, // Target devices between 640px and 767px
+        lg: { min: "768px", max: "1023px" }, // Target devices between 768px and 1023px
+        xl: { min: "1024px", max: "1279px" }, // Target devices between 1024px and 1279px
+        xxl: { min: "1280px", max: "1535px" }, // Target devices between 1280px and 1535px
       },
     },
   },
