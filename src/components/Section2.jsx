@@ -62,16 +62,16 @@ const Section2 = ({ videoCover, footer }) => {
     {
       name: "Hindi Cinema In 2024",
       details: [
-        "Kani Kusruti (Girls Will Be Girls)",
-        "Vikrant Massey (Sector 36)",
-        "Alia Bhatt (Jigra)",
-        "Diljit Dosanjh (Amar Singh Chamkila)",
-        "Anjali Anand (Raat Jawaan Hai)",
-        "Gyanendra Tripathi (Barah by Barah)",
-        "Mukul Chadda (Fairy Folk)",
-        "Vivek Gomber (Lootere)",
-        "Konkona Sen Sharma (Killer Soup)",
-        "Abhishek Bachchan (I Want to Talk)"
+        "When the Cats Are Away…",
+        "The Mice Will Play",
+        "Mad-dock Or What?",
+        "Nayak(s): The Real Heroes",
+        "Unsung Melodies",
+        "The P word",
+        "D Company",
+        "Why this Kolaveri Franchise?",
+        "Streaming and Tears",
+        "Box-of-chocolates Feminism",
       ],
       more:"https://www.hollywoodreporterindia.com/features/insight/hindi-cinema-in-2024-all-we-imagine-as-bollywood",
       poster: "https://m.media-amazon.com/images/M/MV5BNWIzZjVmN2EtNGEyMy00MzVlLWIxMmItZjYzZGVjMzQ3N2VkXkEyXkFqcGc@._V1_FMjpg_UX854_.jpg"
@@ -210,16 +210,16 @@ const Section2 = ({ videoCover, footer }) => {
     {
       name: "The 10 Highest-Grossing Films Of 2024",
       details: [
-        "Pushpa 2: The Rule (Telugu) — ₹1405 Crore",
-        "Kalki 2898 AD (Telugu) — ₹776 Crore",
-        "Stree 2 (Hindi) — ₹698 Crore",
-        "Devara: Part 1 (Telugu) — ₹347 Crore",
-        "Bhool Bhulaiyaa 3 (Hindi) — ₹313 Crore",
-        "The Greatest of All Time (Tamil) — ₹305 Crore",
-        "Singham Again (Hindi) — ₹298 Crore",
-        "Amaran (Tamil) — ₹260 Crore",
-        "Fighter (Hindi) — ₹243 Crore",
-        "Hanu-Man (Telugu) — ₹240 Crore",
+        "Pushpa 2: The Rule (Telugu)",
+        "Kalki 2898 AD (Telugu)",
+        "Stree 2 (Hindi)",
+        "Devara: Part 1 (Telugu)",
+        "Bhool Bhulaiyaa 3 (Hindi)",
+        "The Greatest of All Time (Tamil)",
+        "Singham Again (Hindi)",
+        "Amaran (Tamil)",
+        "Fighter (Hindi)",
+        "Hanu-Man (Telugu)",
       ],
       more:"https://www.hollywoodreporterindia.com/features/insight/the-10-highest-grossing-films-of-2024-pushpa-2-kalki-2898-ad-stree-2-and-more",
       poster: "https://m.media-amazon.com/images/M/MV5BNDkzZjZmNTYtZjAxMC00M2U3LWEyMjctMjY2NDEwYWE1MzBmXkEyXkFqcGc@._V1_FMjpg_UX1118_.jpg"
@@ -360,7 +360,7 @@ const Section2 = ({ videoCover, footer }) => {
         <div className="card sm:w-[50%] w-[calc(100%/3)] h-full p-[3vw] py-[3vw] relative text-white">
           <div className="line1r sm:h-[50vh] h-[80vh] w-[1px] bg-white absolute left-0 top-0"></div>
           <div className='card-content h-full '>
-            {d.details.map((dets, i) => (<h4 key={i} className='sm:text-[3.3vw] text-[1.3vw] mb-[1.2vw] font-[font3] font-regular'>{i + 1}.{dets}</h4>))}
+            {d.details.map((dets, i) => ( <h4 key={i} className='sm:text-[3.3vw] text-[1.3vw] mb-[1.2vw] font-[font3] font-regular flex items-center sm:gap-[1vw] gap-[.5vw]'><span className='sm:w-[1vw] w-[.3vw] sm:h-[1vw] h-[.3vw] inline-block bg-white rounded-full'></span> {dets}</h4>))}
           </div>
         </div>
       </div>))}
