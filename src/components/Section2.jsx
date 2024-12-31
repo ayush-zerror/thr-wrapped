@@ -337,7 +337,7 @@ const Section2 = ({ videoCover, footer }) => {
       {data.map((d, i) => (<div ref={(el) => wrappers.current[i] = el} key={i} className='wrap w-full sm:h-[50vh] h-[80vh] flex items-start justify-between relative'>
         <div className="line1t bg-white w-full h-[1px] absolute top-0 left-1/2 -translate-x-1/2"></div>
         {data.length - 1 === i && <div className="line1b bg-white w-full h-[1px] absolute bottom-0 left-0"></div>}
-        <div className="card sm:hidden p-[3vw] py-[3vw] w-[calc(100%/3)] h-full relative text-white">
+        <div className="card sm:hidden md:hidden p-[3vw] py-[3vw] w-[calc(100%/3)] h-full relative text-white">
           <div className="card-content h-full ">
             <h5 className='text-[1.2vw] text-white font-[font3]'>[ {i + 1 < 10 ? `0${i + 1}` : i + 1} ]</h5>
             <h3 className='text-[3.5vw] leading-tight my-[2vw] font-[font2]'>{d.name}</h3>
@@ -347,20 +347,20 @@ const Section2 = ({ videoCover, footer }) => {
           </div>
           <div className="line1l h-[80vh] w-[1px] bg-white absolute right-0 top-0"></div>
         </div>
-        <div style={{ transformOrigin: "top center" }} className="card  card-center relative sm:w-[50%] w-[calc(100%/3)] h-full">
+        <div style={{ transformOrigin: "top center" }} className="card  card-center relative md:w-[50%] w-[calc(100%/3)] h-full">
           <img className='w-full h-full object-cover' src={d.poster} alt="" />
-          <div className="card-mobile sm:flex hidden h-full absolute w-full  flex-col justify-end bottom-0 left-0 p-[3vw] pb-[6vw]">
-            <h5 className='text-[4vw] text-white font-[font3]'>[ {i + 1 < 10 ? `0${i + 1}` : i + 1} ]</h5>
-            <h3 className='text-[8vw] leading-tight my-[2.5vw] text-white font-[font2]'>{d.name}</h3>
+          <div className="card-mobile md:flex hidden h-full absolute w-full  flex-col justify-end bottom-0 left-0 p-[3vw] pb-[6vw]">
+            <h5 className='text-[4vw] md:text-[2.5vw] text-white font-[font3]'>[ {i + 1 < 10 ? `0${i + 1}` : i + 1} ]</h5>
+            <h3 className='text-[8vw] md:text-[5vw] leading-tight my-[2.5vw] text-white font-[font2]'>{d.name}</h3>
             <a href={d.more} target='_block' className='readbtn overflow-hidden relative px-[3vw] py-[.6vw] border border-white font-[font3] inline-block w-fit rounded-full cursor-pointer'>
-              <h3 className='text-[3.2vw] whitespace-nowrap z-20 text-white relative font-semibold'>Read full article</h3>
+              <h3 className='text-[3.2vw] md:text-[2vw] whitespace-nowrap z-20 text-white relative font-semibold'>Read full article</h3>
             </a>
           </div>
         </div>
-        <div className="card sm:w-[50%] w-[calc(100%/3)] h-full p-[3vw] py-[3vw] relative text-white">
+        <div className="card md:w-[50%] w-[calc(100%/3)] h-full p-[3vw] py-[3vw] relative text-white">
           <div className="line1r sm:h-[50vh] h-[80vh] w-[1px] bg-white absolute left-0 top-0"></div>
           <div className='card-content h-full '>
-            {d.details.map((dets, i) => ( <h4 key={i} className='sm:text-[3.3vw] text-[1.3vw] mb-[1.2vw] font-[font3] font-regular flex items-center sm:gap-[1vw] gap-[.5vw]'><span className='sm:w-[1vw] w-[.3vw] sm:h-[1vw] h-[.3vw] inline-block bg-white rounded-full'></span> {dets}</h4>))}
+            {d.details.map((dets, i) => ( <h4 key={i} className='sm:text-[3.3vw] md:text-[2.8vw] text-[1.3vw] mb-[1.2vw] font-[font3] font-regular flex items-center sm:gap-[1vw] gap-[.5vw]'><span className='sm:w-[1vw] md:w-[.7vw] w-[.3vw] flex-shrink-0 sm:h-[1vw] md:h-[.7vw] h-[.3vw] block bg-white rounded-full'></span> {dets}</h4>))}
           </div>
         </div>
       </div>))}
