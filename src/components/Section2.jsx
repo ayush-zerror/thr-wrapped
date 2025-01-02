@@ -38,7 +38,7 @@ const Section2 = ({ videoCover, footer }) => {
         "Tovino Thomas (Ajayante Randam Moshanam)",
       ],
       more: "https://www.hollywoodreporterindia.com/features/insight/the-10-best-malayalam-film-performances-of-2024-urvashi-prithviraj-sukumaran-and-more",
-      poster: "https://stat5.bollywoodhungama.in/wp-content/uploads/2024/02/Laapataa-Ladies.jpg"
+      poster: "/sample.png"
     },
     {
       name: "Hindi Cinema In 2024",
@@ -310,7 +310,7 @@ const Section2 = ({ videoCover, footer }) => {
 
   return (
     <div ref={container} className='w-full min-h-screen py-[5vw]'>
-      {data.map((d, i) => (<div ref={(el) => wrappers.current[i] = el} key={i} className='wrap w-full sm:h-[240px] md:h-[80%] lg:h-[42vh] overflow-hidden  xl:h-[100%]  h-[80%] flex items-start justify-between relative'>
+      {data.map((d, i) => (<div ref={(el) => wrappers.current[i] = el} key={i} className='wrap w-full sm:h-[230px] md:h-[80%] lg:h-[42vh] overflow-hidden  xl:h-[100%]  h-[80%] flex items-start justify-between relative'>
         <div className="line1t bg-white w-full z-10 h-[1px] absolute top-0 left-1/2 -translate-x-1/2"></div>
         {data.length - 1 === i && <div className="line1b bg-white/80 w-full h-[1px] z-10 absolute bottom-0 left-0"></div>}
         <div className="card sm:hidden md:hidden p-[3vw] py-[3vw] w-[calc(100%/3)] h-full relative text-white">
@@ -321,9 +321,9 @@ const Section2 = ({ videoCover, footer }) => {
               <h3 className='text-[.9vw] z-20 text-white relative'>Read full article</h3>
             </a>
           </div>
-          <div className="line1l sm:h-[240px] md:h-[80%] lg:h-[42vh] xl:h-[200%] h-[180%] w-[1px] bg-white/80 absolute right-0 top-0"></div>
+          <div className="line1l sm:h-[230px] md:h-[80%] lg:h-[42vh] xl:h-[200%] h-[100vh] w-[1px] bg-white/80 absolute right-0 top-0"></div>
         </div>
-        <div style={{ transformOrigin: "top center" }} className="card  card-center relative sm:w-[50%] md:w-[50%] w-[calc(100%/3)] sm:h-[240px] md:h-[80%] lg:h-[80%]  h-full">
+        <div style={{ transformOrigin: "top center" }} className="card  card-center relative sm:w-[50%] md:w-[50%] w-[calc(100%/3)] sm:h-[230px] md:h-[80%] lg:h-[80%]  h-full">
           <div className='relative overflow-hidden'>
             <Image width={1000} height={1000} className='object-cover' src={d.poster} alt="" />
           </div>
@@ -336,9 +336,9 @@ const Section2 = ({ videoCover, footer }) => {
           </div>
         </div>
         <div className="card  sm:w-[50%]  md:w-[50%] w-[calc(100%/3)]  relative text-white">
-          <div className="line1r sm:h-[240px] md:h-[120%] lg:h-[42vh] xl:h-[200%] h-[710px] w-[1px] bg-white/80 absolute left-0 top-0"></div>
-          <div className='card-content scrollstyle  p-[3vw] py-[3vw] sm:h-[240px] md:h-[80%] lg:h-[80%] xl:h-[100%]  overflow-y-scroll overflow-hidden pointer-events-none'>
-            {d.details.map((dets, i) => (<h4 key={i} className='sm:text-[3vw] md:text-[2.5vw] lg:text-[1.8vw] text-[1.3vw] mb-[.5vw] font-[font3] font-regular flex items-center sm:gap-[1vw] gap-[.5vw]'><span className='sm:w-[1vw] md:w-[.7vw] w-[.3vw] flex-shrink-0 sm:h-[1vw] md:h-[.7vw] h-[.3vw] block bg-white rounded-full'></span> {dets}</h4>))}
+          <div className="line1r sm:h-[230px] md:h-[120%] lg:h-[42vh] xl:h-[200%] h-[100vh] w-[1px] bg-white/80 absolute left-0 top-0"></div>
+          <div className='card-content scrollstyle  p-[3vw] py-[3vw] sm:h-[230px] md:h-[80%] lg:h-[80%] xl:h-[100%]  overflow-y-scroll overflow-hidden pointer-events-none'>
+            {d.details.map((dets, i) => (<h4 key={i} className='sm:text-[3.1vw] md:text-[2.5vw] lg:text-[1.8vw] text-[1.3vw] mb-[.5vw] font-[font3] font-regular flex items-center sm:gap-[1vw] gap-[.5vw]'><span className='sm:w-[1vw] md:w-[.7vw] w-[.3vw] flex-shrink-0 sm:h-[1vw] md:h-[.7vw] h-[.3vw] block bg-white rounded-full'></span> {dets}</h4>))}
           </div>
         </div>
       </div>))}
