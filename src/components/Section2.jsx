@@ -417,7 +417,7 @@ const Section2 = ({ videoCover, footer }) => {
               <h3 className='text-[.9vw] z-20 text-white relative'>Read full article</h3>
             </a>
           </div>
-          <div className="line1l sm:h-[235px] md:h-[80%] lg:h-[80%] xl:h-[80%] h-[180%] w-[1px] bg-white absolute right-0 top-0"></div>
+          <div className="line1l sm:h-[235px] md:h-[80%] lg:h-[100%] xl:h-[80%] h-[180%] w-[1px] bg-white absolute right-0 top-0"></div>
         </div>
         <div style={{ transformOrigin: "top center" }} className="card  card-center relative sm:w-[50%] md:w-[50%] w-[calc(100%/3)] sm:h-[235px] md:h-[80%] lg:h-[80%] xl:h-[80%] h-full">
          <div className='relative overflow-hidden'>
@@ -432,7 +432,7 @@ const Section2 = ({ videoCover, footer }) => {
           </div>
         </div>
         <div className="card  sm:w-[50%]  md:w-[50%] w-[calc(100%/3)]  relative text-white">
-          <div className="line1r sm:h-[235px] md:h-[80%] lg:h-[80%] xl:h-[80%] h-[710px] w-[1px] bg-white absolute left-0 top-0"></div>
+          <div className="line1r sm:h-[235px] md:h-[120%] lg:h-[100%] xl:h-[80%] h-[710px] w-[1px] bg-white absolute left-0 top-0"></div>
           <div className='card-content scrollstyle  p-[3vw] py-[3vw] sm:h-[235px] md:h-[80%] lg:h-[80%] xl:h-[80%]  overflow-y-scroll overflow-hidden pointer-events-none'>
             {d.details.map((dets, i) => ( <h4 key={i} className='sm:text-[3.3vw] md:text-[2.5vw] lg:text-[1.8vw] text-[1.3vw] mb-[1.2vw] font-[font3] font-regular flex items-center sm:gap-[1vw] gap-[.5vw]'><span className='sm:w-[1vw] md:w-[.7vw] w-[.3vw] flex-shrink-0 sm:h-[1vw] md:h-[.7vw] h-[.3vw] block bg-white rounded-full'></span> {dets}</h4>))}
           </div>
