@@ -24,7 +24,7 @@ const Section2 = ({ videoCover, footer }) => {
         "All We Imagine As Light",
       ],
       more: "https://www.hollywoodreporterindia.com/features/insight/the-best-indian-films-of-2024-from-all-we-imagine-as-light-to-meiyazhagan-and-amar-singh-chamkila",
-      poster: "/img.jpg"
+      poster: "/THE-BEST-INDIAN-FILMS-OF-2024.gif"
     },
     {
       name: "The 10 Best Malayalam Film Performances Of 2024",
@@ -38,7 +38,7 @@ const Section2 = ({ videoCover, footer }) => {
         "Tovino Thomas (Ajayante Randam Moshanam)",
       ],
       more: "https://www.hollywoodreporterindia.com/features/insight/the-10-best-malayalam-film-performances-of-2024-urvashi-prithviraj-sukumaran-and-more",
-      poster: "/sample.png"
+      poster: "/The-10-Best-Malayalam-Film-Performances-Of-2024 (1).gif"
     },
     {
       name: "Hindi Cinema In 2024",
@@ -55,7 +55,7 @@ const Section2 = ({ videoCover, footer }) => {
         "Box-of-chocolates Feminism",
       ],
       more: "https://www.hollywoodreporterindia.com/features/insight/hindi-cinema-in-2024-all-we-imagine-as-bollywood",
-      poster: "https://stat5.bollywoodhungama.in/wp-content/uploads/2024/02/Laapataa-Ladies.jpg"
+      poster: "/Hindi-cinema-final-new.gif"
     },
     {
       name: "Marathi Cinema in 2024",
@@ -124,7 +124,7 @@ const Section2 = ({ videoCover, footer }) => {
         "Big Dawg’s Big Blow Up",
       ],
       more: "https://www.hollywoodreporterindia.com/features/columns/the-best-indian-pop-culture-moments-of-2024-diljit-dosanjh-hanumankind-tauba-tauba-and-more",
-      poster: "https://stat5.bollywoodhungama.in/wp-content/uploads/2024/02/Laapataa-Ladies.jpg"
+      poster: "The-Best-Indian-Pop-Culture-Moments.gif"
     },
     {
       name: "Bollywood Music in 2024",
@@ -198,7 +198,7 @@ const Section2 = ({ videoCover, footer }) => {
         "Hanu-Man (Telugu)",
       ],
       more: "https://www.hollywoodreporterindia.com/features/insight/the-10-highest-grossing-films-of-2024-pushpa-2-kalki-2898-ad-stree-2-and-more",
-      poster: "https://stat5.bollywoodhungama.in/wp-content/uploads/2024/02/Laapataa-Ladies.jpg"
+      poster: "/Top-10-Highest-Grossing.gif"
     },
     {
       name: "The 10 Best Tamil Film Performances Of 2024",
@@ -215,7 +215,7 @@ const Section2 = ({ videoCover, footer }) => {
         "Vikram (Thangalaan)",
       ],
       more: "https://www.hollywoodreporterindia.com/features/insight/the-10-best-tamil-film-performances-of-2024",
-      poster: "https://stat5.bollywoodhungama.in/wp-content/uploads/2024/02/Laapataa-Ladies.jpg"
+      poster: "/Top-10-Tamil-Film.gif"
     },
 
 
@@ -325,7 +325,7 @@ const Section2 = ({ videoCover, footer }) => {
         </div>
         <div style={{ transformOrigin: "top center" }} className="card  card-center relative sm:w-[50%] md:w-[50%] w-[calc(100%/3)] sm:h-[230px] md:h-[80%] lg:h-[80%]  h-full">
           <div className='relative overflow-hidden'>
-            <Image width={1000} height={1000} className='object-cover' src={d.poster} alt="" />
+            <Image width={1000} unoptimized height={1000} className='object-cover' src={d.poster} alt="" />
           </div>
           <div className="card-mobile sm:flex md:flex hidden h-full absolute w-full  flex-col justify-end bottom-0 left-0 p-[3vw]">
             <h5 className='text-[4vw] md:text-[2.5vw] text-white font-[font3]'>[ {i + 1 < 10 ? `0${i + 1}` : i + 1} ]</h5>
