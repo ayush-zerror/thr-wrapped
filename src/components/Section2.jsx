@@ -55,7 +55,7 @@ const Section2 = ({ videoCover, footer }) => {
         "Diljit Dosanjh (Amar Singh Chamkila)",
       ],
       more: "https://www.hollywoodreporterindia.com/lists/lists/the-10-best-hindi-performances-of-2024-ranked",
-      poster: "https://stat5.bollywoodhungama.in/wp-content/uploads/2024/02/Laapataa-Ladies.jpg"
+      poster: "/HINDI-FILMS.gif"
     },
     {
       name: "The 10 Best Tamil Film Performances Of 2024",
@@ -102,7 +102,7 @@ const Section2 = ({ videoCover, footer }) => {
         "Satya (Mathu Vadalara 2)",
       ],
       more: "https://www.hollywoodreporterindia.com/lists/lists/the-10-best-telugu-film-performances-of-2024-dulquer-salmaan-amitabh-bachchan-and-more",
-      poster: "https://stat5.bollywoodhungama.in/wp-content/uploads/2024/02/Laapataa-Ladies.jpg"
+      poster: "/telgu-film-performances.gif"
     },
     {
       name: "Indian Actors' Fees In 2024",
@@ -112,7 +112,7 @@ const Section2 = ({ videoCover, footer }) => {
         "What is happening in the Tamil and Malayalam industries?",
       ],
       more: "https://www.hollywoodreporterindia.com/features/insight/from-shah-rukh-khan-allu-arjun-mammooty-to-vijay-star-fees-in-2024",
-      poster: "https://stat5.bollywoodhungama.in/wp-content/uploads/2024/02/Laapataa-Ladies.jpg"
+      poster: "/Indian-Actors'-Fees-In-2024.gif"
     },
     {
       name: "Hindi Cinema In 2024",
@@ -141,7 +141,7 @@ const Section2 = ({ videoCover, footer }) => {
         "Raat Jawaan Hai",
       ],
       more: "https://www.hollywoodreporterindia.com/lists/lists/the-best-hindi-shows-of-2024-ranked-raat-jawaan-hai-killer-soup-and-more",
-      poster: "https://stat5.bollywoodhungama.in/wp-content/uploads/2024/02/Laapataa-Ladies.jpg"
+      poster: "/Best-hindi-shows-of-2024.gif"
     },
     {
       name: "Kannada Cinema In 2024",
@@ -154,7 +154,7 @@ const Section2 = ({ videoCover, footer }) => {
         "Ibbani Tabbida Ileyali",
       ],
       more: "https://www.hollywoodreporterindia.com/features/insight/kannada-cinema-in-2024-how-debutant-directors-inspired-confidence-in-promoting-home-grown-talent",
-      poster: "https://stat5.bollywoodhungama.in/wp-content/uploads/2024/02/Laapataa-Ladies.jpg"
+      poster: "/Kannada-Cinema-In-2024.gif"
     },
     {
       name: "Marathi Cinema in 2024",
@@ -167,7 +167,7 @@ const Section2 = ({ videoCover, footer }) => {
         "Gharat Ganpati",
       ],
       more: "https://www.hollywoodreporterindia.com/features/insight/marathi-cinema-in-2024-how-did-the-industry-fare-this-year",
-      poster: "https://stat5.bollywoodhungama.in/wp-content/uploads/2024/02/Laapataa-Ladies.jpg"
+      poster: "/marathi-cinema-in-2024.gif"
     },
     {
       name: "The Range Of Queer Desire On-Screen in 2024",
@@ -182,7 +182,7 @@ const Section2 = ({ videoCover, footer }) => {
         "'Soni Soni' from Ishq Vishq",
       ],
       more: "https://www.hollywoodreporterindia.com/features/insight/from-bhool-bhulaiyaa-3-to-barzakh-the-range-of-queer-desire-on-screen-in-2024",
-      poster: "https://stat5.bollywoodhungama.in/wp-content/uploads/2024/02/Laapataa-Ladies.jpg"
+      poster: "/The-Range-Of-Queer-Desire-On-Screen-in-2024.gif"
     },
     {
       name: "Bollywood Celebrity Fashion In 2024",
@@ -199,7 +199,7 @@ const Section2 = ({ videoCover, footer }) => {
         "Sonam Kapoor Ahuja",
       ],
       more: "https://www.hollywoodreporterindia.com/lifestyle/fashion/bollywood-celebrity-fashion-in-2024-the-10-most-defining-sartorial-moments-of-the-year",
-      poster: "https://stat5.bollywoodhungama.in/wp-content/uploads/2024/02/Laapataa-Ladies.jpg"
+      poster: "/Bollywood-Celebrity-Fashion-In-2024.gif"
     },
     {
       name: "Bollywood Music in 2024",
@@ -214,7 +214,7 @@ const Section2 = ({ videoCover, footer }) => {
         "'Soni Soni' from Ishq Vishq Reloaded",
       ],
       more: "https://www.hollywoodreporterindia.com/features/columns/bollywood-music-in-2024-the-hits-that-ruled-playlists",
-      poster: "https://stat5.bollywoodhungama.in/wp-content/uploads/2024/02/Laapataa-Ladies.jpg"
+      poster: "/bollywood-music.gif"
     },
     {
       name: "The Best Indian Pop-Culture Moments Of 2024",
@@ -320,7 +320,7 @@ const Section2 = ({ videoCover, footer }) => {
 
   return (
     <div ref={container} className='w-full min-h-screen py-[5vw]'>
-      {data.map((d, i) => (<div ref={(el) => wrappers.current[i] = el} key={i} className='wrap w-full sm:h-[235px] md:h-[80%] lg:h-[42vh] overflow-hidden  xl:h-[100%]  h-[80%] flex items-start justify-between relative'>
+      {data.map((d, i) => (<div ref={(el) => wrappers.current[i] = el} key={i} className='wrap w-full sm:h-[235px] md:h-[80%] lg:h-[42vh] overflow-hidden  xl:h-[80%]   flex items-start justify-between relative'>
         <div className="line1t bg-white w-full z-10 h-[1px] absolute top-0 left-1/2 -translate-x-1/2"></div>
         {data.length - 1 === i && <div className="line1b bg-white/80 w-full h-[1px] z-10 absolute bottom-0 left-0"></div>}
         <div className="card sm:hidden md:hidden p-[3vw] py-[3vw] w-[calc(100%/3)] h-full relative text-white">
@@ -335,7 +335,7 @@ const Section2 = ({ videoCover, footer }) => {
         </div>
         <div style={{ transformOrigin: "top center" }} className="card  card-center relative sm:w-[50%] md:w-[50%] w-[calc(100%/3)] sm:h-[235px] md:h-[80%] lg:h-[80%]  h-full">
           <div className='relative overflow-hidden'>
-            <Image width={1000} unoptimized height={1000} className='object-cover' src={d.poster} alt="" />
+            <Image width={1000} unoptimized priority height={1000} className='object-cover' src={d.poster} alt="" />
           </div>
           <div className="card-mobile sm:flex md:flex hidden h-full absolute w-full  flex-col justify-end bottom-0 left-0 p-[3vw]">
             <h5 className='text-[4vw] md:text-[2.5vw] text-white font-[font3]'>[ {i + 1 < 10 ? `0${i + 1}` : i + 1} ]</h5>
@@ -347,7 +347,7 @@ const Section2 = ({ videoCover, footer }) => {
         </div>
         <div className="card  sm:w-[50%]  md:w-[50%] w-[calc(100%/3)]  relative text-white">
           <div className="line1r sm:h-[235px] md:h-[120%] lg:h-[42vh] xl:h-[200%] h-[100vh] w-[1px] bg-white/80 absolute left-0 top-0"></div>
-          <div className='card-content scrollstyle  p-[3vw] py-[3vw] sm:h-[235px] md:h-[80%] lg:h-[80%] xl:h-[100%]  overflow-y-scroll overflow-hidden pointer-events-none'>
+          <div className='card-content scrollstyle  p-[3vw] py-[3vw] sm:h-[235px] md:h-[80%] lg:h-[80%] xl:h-[80%]  overflow-y-scroll overflow-hidden pointer-events-none'>
             {d.details.map((dets, i) => (<h4 key={i} className='sm:text-[3.1vw] md:text-[2.5vw] lg:text-[1.8vw] text-[1.3vw] mb-[.5vw] font-[font3] font-regular flex items-center sm:gap-[1vw] gap-[.5vw]'><span className='sm:w-[1vw] md:w-[.7vw] w-[.3vw] flex-shrink-0 sm:h-[1vw] md:h-[.7vw] h-[.3vw] block bg-white rounded-full'></span> {dets}</h4>))}
           </div>
         </div>
