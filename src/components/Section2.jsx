@@ -146,12 +146,12 @@ const Section2 = ({ videoCover, footer }) => {
     {
       name: "Kannada Cinema In 2024",
       details: [
-        "Nach Ga Ghuma",
-        "Dharmaveer 2",
-        "Yek Number",
-        "Shivrayancha Chhava",
-        "Hya Goshtila Navach Nahi",
-        "Gharat Ganpati",
+        "Shakhahaari",
+        "Srinidhi Bengaluru Blink",
+        "Moorane Krishnappa",
+        "Shivamma Yarehanchinala",
+        "Prateek Prajosh's Chilli Chicken",
+        "Ibbani Tabbida Ileyali",
       ],
       more: "https://www.hollywoodreporterindia.com/features/insight/kannada-cinema-in-2024-how-debutant-directors-inspired-confidence-in-promoting-home-grown-talent",
       poster: "https://stat5.bollywoodhungama.in/wp-content/uploads/2024/02/Laapataa-Ladies.jpg"
