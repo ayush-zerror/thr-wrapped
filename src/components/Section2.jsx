@@ -27,6 +27,54 @@ const Section2 = ({ videoCover, footer }) => {
       poster: "/THE-BEST-INDIAN-FILMS-OF-2024.gif"
     },
     {
+      name: "The 10 Highest-Grossing Films Of 2024",
+      details: [
+        "Pushpa 2: The Rule (Telugu)",
+        "Kalki 2898 AD (Telugu)",
+        "Stree 2 (Hindi)",
+        "Devara: Part 1 (Telugu)",
+        "Bhool Bhulaiyaa 3 (Hindi)",
+        "The Greatest of All Time (Tamil)",
+        "Singham Again (Hindi)",
+        "Amaran (Tamil)",
+        "Fighter (Hindi)",
+        "Hanu-Man (Telugu)",
+      ],
+      more: "https://www.hollywoodreporterindia.com/features/insight/the-10-highest-grossing-films-of-2024-pushpa-2-kalki-2898-ad-stree-2-and-more",
+      poster: "/Top-10-Highest-Grossing.gif"
+    },
+    {
+      name: "The 10 Best Hindi Performances of 2024, Ranked",
+      details: [
+        "Abhishek Bachchan (I Want to Talk)",
+        "Konkona Sen Sharma (Killer Soup)",
+        "Vivek Gomber (Lootere)",
+        "Mukul Chadda (Fairy Folk)",
+        "Gyanendra Tripathi (Barah by Barah)",
+        "Anjali Anand",
+        "Diljit Dosanjh (Amar Singh Chamkila)",
+      ],
+      more: "https://www.hollywoodreporterindia.com/lists/lists/the-10-best-hindi-performances-of-2024-ranked",
+      poster: "https://stat5.bollywoodhungama.in/wp-content/uploads/2024/02/Laapataa-Ladies.jpg"
+    },
+    {
+      name: "The 10 Best Tamil Film Performances Of 2024",
+      details: [
+        "Geetha Kailasam",
+        "Manikandan (Lover)",
+        "Karthi (Meiyazhagan)",
+        "Arvind Swami (Meiyazhagan)",
+        "Vijay Sethupathi",
+        "Attakathi Dinesh",
+        "Anna Ben (Kottukkaali)",
+        "Ponvel M. (Vaazhai)",
+        "Sai Pallavi (Amaran)",
+        "Vikram (Thangalaan)",
+      ],
+      more: "https://www.hollywoodreporterindia.com/features/insight/the-10-best-tamil-film-performances-of-2024",
+      poster: "/Top-10-Tamil-Film.gif"
+    },
+    {
       name: "The 10 Best Malayalam Film Performances Of 2024",
       details: [
         "Asif Ali (Kishkinda Kandam, Level Cross, Adios Amigo) ",
@@ -39,6 +87,32 @@ const Section2 = ({ videoCover, footer }) => {
       ],
       more: "https://www.hollywoodreporterindia.com/features/insight/the-10-best-malayalam-film-performances-of-2024-urvashi-prithviraj-sukumaran-and-more",
       poster: "/The-10-Best-Malayalam-Film-Performances-Of-2024 (1).gif"
+    },
+    {
+      name: "The 10 Best Telugu Film Performances of 2024",
+      details: [
+        "Nivetha Thomas (35 Chinna Katha Kaadu)",
+        "Allu Arjun (Pushpa: The Rule) ",
+        "Dulquer Salmaan (Lucky Baskhar)",
+        "Amitabh Bachchan",
+        "Naresh",
+        "Sharanya Pradeep",
+        "Nani (Saripodha Sanivaaram)",
+        "Vishwak Sen (Gaami)",
+        "Satya (Mathu Vadalara 2)",
+      ],
+      more: "https://www.hollywoodreporterindia.com/lists/lists/the-10-best-telugu-film-performances-of-2024-dulquer-salmaan-amitabh-bachchan-and-more",
+      poster: "https://stat5.bollywoodhungama.in/wp-content/uploads/2024/02/Laapataa-Ladies.jpg"
+    },
+    {
+      name: "Indian Actors' Fees In 2024",
+      details: [
+        "The Khans' mode of payment",
+        "Where do the others in Bollywood stand?",
+        "What is happening in the Tamil and Malayalam industries?",
+      ],
+      more: "https://www.hollywoodreporterindia.com/features/insight/from-shah-rukh-khan-allu-arjun-mammooty-to-vijay-star-fees-in-2024",
+      poster: "https://stat5.bollywoodhungama.in/wp-content/uploads/2024/02/Laapataa-Ladies.jpg"
     },
     {
       name: "Hindi Cinema In 2024",
@@ -58,6 +132,31 @@ const Section2 = ({ videoCover, footer }) => {
       poster: "/Hindi-cinema-final-new.gif"
     },
     {
+      name: "The Best Hindi Shows Of 2024, Ranked",
+      details: [
+        "Killer Soup",
+        "Yeh Kaali Kaali Ankhein (Season 2)",
+        "Bandish Bandits (Season 2)",
+        "Poacher",
+        "Raat Jawaan Hai",
+      ],
+      more: "https://www.hollywoodreporterindia.com/lists/lists/the-best-hindi-shows-of-2024-ranked-raat-jawaan-hai-killer-soup-and-more",
+      poster: "https://stat5.bollywoodhungama.in/wp-content/uploads/2024/02/Laapataa-Ladies.jpg"
+    },
+    {
+      name: "Kannada Cinema In 2024",
+      details: [
+        "Nach Ga Ghuma",
+        "Dharmaveer 2",
+        "Yek Number",
+        "Shivrayancha Chhava",
+        "Hya Goshtila Navach Nahi",
+        "Gharat Ganpati",
+      ],
+      more: "https://www.hollywoodreporterindia.com/features/insight/kannada-cinema-in-2024-how-debutant-directors-inspired-confidence-in-promoting-home-grown-talent",
+      poster: "https://stat5.bollywoodhungama.in/wp-content/uploads/2024/02/Laapataa-Ladies.jpg"
+    },
+    {
       name: "Marathi Cinema in 2024",
       details: [
         "Nach Ga Ghuma",
@@ -71,74 +170,18 @@ const Section2 = ({ videoCover, footer }) => {
       poster: "https://stat5.bollywoodhungama.in/wp-content/uploads/2024/02/Laapataa-Ladies.jpg"
     },
     {
-      name: "The Best Hindi Shows Of 2024, Ranked",
-      details: [
-        "Killer Soup",
-        "Yeh Kaali Kaali Ankhein (Season 2)",
-        "Bandish Bandits (Season 2)",
-        "Poacher",
-        "Raat Jawaan Hai",
-      ],
-      more: "https://www.hollywoodreporterindia.com/lists/lists/the-best-hindi-shows-of-2024-ranked-raat-jawaan-hai-killer-soup-and-more",
-      poster: "https://stat5.bollywoodhungama.in/wp-content/uploads/2024/02/Laapataa-Ladies.jpg"
-    },
-    {
-      name: "The 10 Best Telugu Film Performances of 2024",
-      details: [
-        "Nivetha Thomas (35 Chinna Katha Kaadu)",
-        "Allu Arjun (Pushpa: The Rule) ",
-        "Dulquer Salmaan (Lucky Baskhar)",
-        "Amitabh Bachchan",
-        "Naresh",
-        "Sharanya Pradeep",
-        "Nani (Saripodha Sanivaaram)",
-        "Vishwak Sen (Gaami)",
-        "Satya (Mathu Vadalara 2)",
-      ],
-      more: "https://www.hollywoodreporterindia.com/lists/lists/the-10-best-telugu-film-performances-of-2024-dulquer-salmaan-amitabh-bachchan-and-more",
-      poster: "https://stat5.bollywoodhungama.in/wp-content/uploads/2024/02/Laapataa-Ladies.jpg"
-    },
-    {
-      name: "The 10 Best Hindi Performances of 2024, Ranked",
-      details: [
-        "Abhishek Bachchan (I Want to Talk)",
-        "Konkona Sen Sharma (Killer Soup)",
-        "Vivek Gomber (Lootere)",
-        "Mukul Chadda (Fairy Folk)",
-        "Gyanendra Tripathi (Barah by Barah)",
-        "Anjali Anand",
-        "Diljit Dosanjh (Amar Singh Chamkila)",
-      ],
-      more: "https://www.hollywoodreporterindia.com/lists/lists/the-10-best-hindi-performances-of-2024-ranked",
-      poster: "https://stat5.bollywoodhungama.in/wp-content/uploads/2024/02/Laapataa-Ladies.jpg"
-    },
-    {
-      name: "The Best Indian Pop-Culture Moments Of 2024",
-      details: [
-        "Dil-Luminati Tour",
-        "All We Imagine As Light At Cannes",
-        "Eda Mone!",
-        "Tauba Tauba",
-        "Cringe On Our Phones",
-        "India’s Got Latent",
-        "Big Dawg’s Big Blow Up",
-      ],
-      more: "https://www.hollywoodreporterindia.com/features/columns/the-best-indian-pop-culture-moments-of-2024-diljit-dosanjh-hanumankind-tauba-tauba-and-more",
-      poster: "The-Best-Indian-Pop-Culture-Moments.gif"
-    },
-    {
-      name: "Bollywood Music in 2024",
+      name: "The Range Of Queer Desire On-Screen in 2024",
       details: [
         "'Sajni' from Laapataa Ladies",
-        "Ankhiyaan Gulaab",
+        "Ankhiyaan Gulaab' from Teri Baaton Mein Aisa Uljha Jiya",
         "'Naina' from Crew",
         "'Aaj Ki Raat' from Stree 2",
         "'Tauba Tauba' from Bad Newz",
         "'Tum Se' from Teri Baaton Mein Aisa Uljha Jiya",
         "'Aayi Nai' from Stree 2",
-        "'Soni Soni' from Ishq Vishq Reloaded",
+        "'Soni Soni' from Ishq Vishq",
       ],
-      more: "https://www.hollywoodreporterindia.com/features/columns/bollywood-music-in-2024-the-hits-that-ruled-playlists",
+      more: "https://www.hollywoodreporterindia.com/features/insight/from-bhool-bhulaiyaa-3-to-barzakh-the-range-of-queer-desire-on-screen-in-2024",
       poster: "https://stat5.bollywoodhungama.in/wp-content/uploads/2024/02/Laapataa-Ladies.jpg"
     },
     {
@@ -159,67 +202,34 @@ const Section2 = ({ videoCover, footer }) => {
       poster: "https://stat5.bollywoodhungama.in/wp-content/uploads/2024/02/Laapataa-Ladies.jpg"
     },
     {
-      name: "From Shah Rukh Khan and Allu Arjun to Vijay and Mammooty",
-      details: [
-        "The Khans' mode of payment",
-        "Where do the others in Bollywood stand?",
-        "What is happening in the Tamil and Malayalam industries?",
-      ],
-      more: "https://www.hollywoodreporterindia.com/features/insight/from-shah-rukh-khan-allu-arjun-mammooty-to-vijay-star-fees-in-2024",
-      poster: "https://stat5.bollywoodhungama.in/wp-content/uploads/2024/02/Laapataa-Ladies.jpg"
-    },
-    {
-      name: "From 'Bhool Bhulaiyaa 3' to 'Barzakh'",
+      name: "Bollywood Music in 2024",
       details: [
         "'Sajni' from Laapataa Ladies",
-        "Ankhiyaan Gulaab' from Teri Baaton Mein Aisa Uljha Jiya",
+        "Ankhiyaan Gulaab",
         "'Naina' from Crew",
         "'Aaj Ki Raat' from Stree 2",
         "'Tauba Tauba' from Bad Newz",
         "'Tum Se' from Teri Baaton Mein Aisa Uljha Jiya",
         "'Aayi Nai' from Stree 2",
-        "'Soni Soni' from Ishq Vishq",
+        "'Soni Soni' from Ishq Vishq Reloaded",
       ],
-      more: "https://www.hollywoodreporterindia.com/features/insight/from-bhool-bhulaiyaa-3-to-barzakh-the-range-of-queer-desire-on-screen-in-2024",
+      more: "https://www.hollywoodreporterindia.com/features/columns/bollywood-music-in-2024-the-hits-that-ruled-playlists",
       poster: "https://stat5.bollywoodhungama.in/wp-content/uploads/2024/02/Laapataa-Ladies.jpg"
     },
     {
-      name: "The 10 Highest-Grossing Films Of 2024",
+      name: "The Best Indian Pop-Culture Moments Of 2024",
       details: [
-        "Pushpa 2: The Rule (Telugu)",
-        "Kalki 2898 AD (Telugu)",
-        "Stree 2 (Hindi)",
-        "Devara: Part 1 (Telugu)",
-        "Bhool Bhulaiyaa 3 (Hindi)",
-        "The Greatest of All Time (Tamil)",
-        "Singham Again (Hindi)",
-        "Amaran (Tamil)",
-        "Fighter (Hindi)",
-        "Hanu-Man (Telugu)",
+        "Dil-Luminati Tour",
+        "All We Imagine As Light At Cannes",
+        "Eda Mone!",
+        "Tauba Tauba",
+        "Cringe On Our Phones",
+        "India’s Got Latent",
+        "Big Dawg’s Big Blow Up",
       ],
-      more: "https://www.hollywoodreporterindia.com/features/insight/the-10-highest-grossing-films-of-2024-pushpa-2-kalki-2898-ad-stree-2-and-more",
-      poster: "/Top-10-Highest-Grossing.gif"
+      more: "https://www.hollywoodreporterindia.com/features/columns/the-best-indian-pop-culture-moments-of-2024-diljit-dosanjh-hanumankind-tauba-tauba-and-more",
+      poster: "The-Best-Indian-Pop-Culture-Moments.gif"
     },
-    {
-      name: "The 10 Best Tamil Film Performances Of 2024",
-      details: [
-        "Geetha Kailasam",
-        "Manikandan (Lover)",
-        "Karthi (Meiyazhagan)",
-        "Arvind Swami (Meiyazhagan)",
-        "Vijay Sethupathi",
-        "Attakathi Dinesh",
-        "Anna Ben (Kottukkaali)",
-        "Ponvel M. (Vaazhai)",
-        "Sai Pallavi (Amaran)",
-        "Vikram (Thangalaan)",
-      ],
-      more: "https://www.hollywoodreporterindia.com/features/insight/the-10-best-tamil-film-performances-of-2024",
-      poster: "/Top-10-Tamil-Film.gif"
-    },
-
-
-
   ];
 
   useEffect(() => {

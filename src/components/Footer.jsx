@@ -1,9 +1,10 @@
 import React from 'react'
-const Footer = ({footer}) => {
+const Footer = ({ footer }) => {
     return (
         <div ref={footer} className='footer w-full h-screen relative'>
             <div className='overlay w-full h-full  absolute top-0 left-0 flex flex-col items-center text-white justify-between text-center p-[1.5vw] sm:pt-[15vh] sm:py-[8vw]'>
                 <h1 className='sm:text-[25vw] md:text-[22vw] text-[18.5vw] sm:whitespace-normal md:whitespace-normal  whitespace-nowrap font-["font2"] uppercase leading-[.7] w-fit font-medium'>Onward 2025</h1>
+                <h5 className='lg:text-[1.5vw] text-[.98vw] sm:hidden md:hidden uppercase  font-[font3] font-medium w-[55%]  mb-[15vw]'>2025 promises to be another pivotal year at the movies, with several big-budget releases, intriguing collaborations, as well as burgeoning indie breakouts and dark horses in the mix. Stay tuned to our website for the best of in-depth reportage, interviews, reviews, box-office analysis, and curated opinions on all we imagine as cinema in India.</h5>
                 <div className='text-center'>
                     <h5 className='lg:text-[1.5vw] text-[.98vw] sm:hidden md:hidden uppercase font-[font3] font-medium'>RPSG Lifestyle Media Thapar House, 3rd floor,<br /> Janpath Lane, New Delhi - 110001.</h5>
                     <h5 className='sm:text-[4vw] md:text-[2vw] sm:font-normal sm:block md:block hidden text-[.98vw] uppercase font-[font3] font-medium'>RPSG Lifestyle Media Thapar House, 3rd floor,</h5>
@@ -15,7 +16,7 @@ const Footer = ({footer}) => {
 
                         <a href="https://www.youtube.com/@HollywoodReporterIndia" target='_block'>[YOUTUBE]</a>
                     </h5>
-                    <a href='https://www.hollywoodreporterindia.com/privacy-policy'  target='_block' className='sm:text-[4vw] md:text-[2vw] sm:font-normal sm:mt-[10vw] sm:block md:block hidden text-[.98vw] uppercase font-[font3] font-medium'>Privacy Policy</a>
+                    <a href='https://www.hollywoodreporterindia.com/privacy-policy' target='_block' className='sm:text-[4vw] md:text-[2vw] sm:font-normal sm:mt-[10vw] sm:block md:block hidden text-[.98vw] uppercase font-[font3] font-medium'>Privacy Policy</a>
                     <a href='https://www.hollywoodreporterindia.com/disclaimer' target='_block' className='sm:text-[4vw] md:text-[2vw] sm:font-normal sm:block md:block hidden text-[.98vw] uppercase font-[font3] font-medium'>Disclaimer</a>
                     <h5 className='sm:text-[4vw] md:text-[2vw] sm:font-normal sm:block md:block hidden text-[.98vw] lg:text-[1.5vw] uppercase font-[font3] font-medium'>© 2025 The Hollywood Reporter, LLC.</h5>
 
