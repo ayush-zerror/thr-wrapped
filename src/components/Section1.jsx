@@ -2,7 +2,7 @@ import React from 'react'
 
 const Section1 = ({home}) => {
   return (
-    <div className='w-full h-screen relative'>
+    <div className='w-full sm:h-[svh] h-[100vh] relative'>
       <div ref={home} className='overlay w-full h-full sm:pt-[15vw] md:pt-[10vw]  sm:pb-[3vh] pt-[1.8vw] pb-[1.5vw] absolute top-0 left-0 flex flex-col items-center  text-white justify-between text-center'>
         <div>
           <div className='sm:h-[15vw] md:h-[10vw] lg:h-[8.5vw] h-[5.5vw] overflow-hidden'>

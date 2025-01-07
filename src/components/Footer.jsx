@@ -11,10 +11,10 @@ const Footer = ({ footer }) => {
                     <h5 className='sm:text-[3.2vw] md:text-[2vw]  sm:font-normal sm:block md:block hidden text-[.98vw]  font-[font3] font-normal'>RPSG Lifestyle Media Thapar House, 3rd floor,</h5>
                     <h5 className='sm:text-[3.2vw] md:text-[2vw]  sm:mb-[2.5vw] sm:font-normal sm:block md:block hidden text-[.98vw]  font-[font3] font-normal'>Janpath Lane, New Delhi - 110001.</h5>
                   
-                    <h5 className=' sm:text-[3.2vw] md:text-[2vw] sm:block md:block hidden text-[.98vw] lg:text-[1.5vw] sm:mb-[1vw] font-[font3] font-normal'><Link href="https://www.hollywoodreporterindia.com/">Visit The Hollywood Reporter India to explore.</Link></h5>
+                    <h5 className=' sm:text-[3.2vw] md:text-[2vw] sm:block md:block hidden text-[.98vw] lg:text-[1.5vw] sm:mb-[1vw] font-[font3] font-normal'><Link href="https://www.hollywoodreporterindia.com/"><span className='bg-black px-[2vw] py-[1vw] my-[2vw] inline-block'>Visit : <span className='font-semibold'>www.hollywoodreporterindia.com</span></span></Link></h5>
                     <h5 className=' sm:text-[3.2vw] md:text-[2vw] sm:block md:block hidden text-[.98vw] lg:text-[1.5vw]  font-[font3] font-normal'>© 2025 The Hollywood Reporter, LLC.</h5>
 
-                    <h5 className='sm:hidden md:hidden  text-[.98vw] lg:text-[1.5vw] xl:text-[1.5vw] mt-[2.2vw]  font-[font3] font-normal flex gap-[2.8vw] justify-between w-full'><span>© 2025 The Hollywood Reporter, LLC.</span> <Link href="https://www.hollywoodreporterindia.com/">Visit The Hollywood Reporter India to explore.</Link></h5>
+                    <h5 className='sm:hidden md:hidden  text-[.98vw] lg:text-[1.5vw] xl:text-[1.5vw] mt-[2.2vw]  font-[font3] font-normal flex gap-[2.8vw] justify-between w-full'><span>© 2025 The Hollywood Reporter, LLC.</span> <Link href="https://www.hollywoodreporterindia.com/"><span className='bg-black px-[1vw] py-[.2vw]'>Visit : <span className='font-semibold'>www.hollywoodreporterindia.com</span></span></Link></h5>
                 </div>
             </div>
         </div>
